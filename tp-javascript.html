@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Exercice sur les boucles for</title>
+		<meta charset="UTF-8"/>
+		<script>
+  var tab=[4,675,32,87,9837,364,7492,45,345,324,374,8364,5967,12,483,8573,659,365,9573,309];
+  var a ;
+  var b ;
+
+ function quiestLePlusGrand(a,b){
+ 	Math.max(a,b);
+ 	}
+ 	function aleatoireNombre(a){
+ 		var alea = (a+1)*Math.random();
+ 		return Math.floor(alea);
+ 	}
+
+ 	function affectation(a,b){
+
+ 		tab[a]=b;
+ 	}
+
+ 	function jeu(){
+
+ 		for(var i=0;i<5;i++){
+
+ 			var alea1= aleatoireNombre(tab.length)
+ 			var alea2= aleatoireNombre(tab.length)
+ 			
+
+ 			}
+ 			alert("le premier nombre est: " +alea1);
+ 			alert("le dexieme nombre est: " +alea2);
+
+ 			if(alea1==alea2){
+ 				alert("perdu");
+ 			}
+ 			else if (alea1 != alea2){
+ 				quiestLePlusGrand(alea1,alea2);
+ 					
+ 			}
+ 				
+
+ 	}
+
+ 	
+		</script>
+	</head>
+	<body>
+		<h1>Boucles for</h1>
+		
+	<p>Cliquez sur le bouton pour lancer la fonction&nbsp;:	<button onclick="jeu()">Vas-y,clic sur moi!</button></p>
+	</body>
+</html>
